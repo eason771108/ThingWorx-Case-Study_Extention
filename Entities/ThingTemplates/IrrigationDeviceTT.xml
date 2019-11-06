@@ -91,6 +91,11 @@
                  name="turnOnIrrigation"
                  sourceName=""
                  timeout="0"></RemoteServiceBinding>
+                <RemoteServiceBinding
+                 enableQueue="false"
+                 name="isRain"
+                 sourceName=""
+                 timeout="0"></RemoteServiceBinding>
             </RemoteServiceBindings>
             <RemoteEventBindings></RemoteEventBindings>
             <AlertConfigurations>
@@ -303,6 +308,22 @@
                      name="turnOnIrrigation">
                         <ResultType
                          baseType="STRING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions></ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="isRain">
+                        <ResultType
+                         baseType="BOOLEAN"
                          description=""
                          name="result"
                          ordinal="0"></ResultType>

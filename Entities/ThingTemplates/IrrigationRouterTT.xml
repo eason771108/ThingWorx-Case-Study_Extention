@@ -81,6 +81,11 @@
                  name="sendMail"
                  sourceName=""
                  timeout="0"></RemoteServiceBinding>
+                <RemoteServiceBinding
+                 enableQueue="false"
+                 name="disconnectDevice"
+                 sourceName=""
+                 timeout="0"></RemoteServiceBinding>
             </RemoteServiceBindings>
             <RemoteEventBindings></RemoteEventBindings>
             <AlertConfigurations>
@@ -223,6 +228,28 @@
                              baseType="STRING"
                              description=""
                              name="name"
+                             ordinal="1"></FieldDefinition>
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition
+                     aspect.isAsync="false"
+                     category=""
+                     description=""
+                     isAllowOverride="false"
+                     isLocalOnly="false"
+                     isOpen="false"
+                     isPrivate="false"
+                     name="disconnectDevice">
+                        <ResultType
+                         baseType="NOTHING"
+                         description=""
+                         name="result"
+                         ordinal="0"></ResultType>
+                        <ParameterDefinitions>
+                            <FieldDefinition
+                             baseType="STRING"
+                             description=""
+                             name="DeviceName"
                              ordinal="1"></FieldDefinition>
                         </ParameterDefinitions>
                     </ServiceDefinition>
