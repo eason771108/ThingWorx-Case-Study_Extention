@@ -64,18 +64,7 @@
                 </ConfigurationTable>
             </ConfigurationTables>
             <PropertyBindings></PropertyBindings>
-            <RemotePropertyBindings>
-                <RemotePropertyBinding
-                 aspect.source=""
-                 aspect.startType="useDefaultValue"
-                 aspect.tagAddress=""
-                 foldType="NONE"
-                 name="GeoLocation"
-                 pushThreshold="0.0"
-                 pushType="VALUE"
-                 sourceName="GeoLocation"
-                 timeout="0"></RemotePropertyBinding>
-            </RemotePropertyBindings>
+            <RemotePropertyBindings></RemotePropertyBindings>
             <RemoteServiceBindings>
                 <RemoteServiceBinding
                  enableQueue="false"
