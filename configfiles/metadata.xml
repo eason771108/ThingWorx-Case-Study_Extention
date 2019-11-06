@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Entities>
     <ExtensionPackages>
-        <ExtensionPackage dependsOn="" description="" minimumThingWorxVersion="8.3.0" name="TWXCaseStudyExt" packageVersion="1.0.1" vendor="">
+        <ExtensionPackage dependsOn="OpenStreetMapWidgets_ExtensionPackage:1.0.42" description="" minimumThingWorxVersion="8.3.0" name="TWXCaseStudyExt" packageVersion="1.0.1" vendor="">
+            <JarResources>
+                <FileResource description="" file="javax.mail.jar" type="JAR"/>
+                <FileResource description="" file="TWXCaseStudyExt.jar" type="JAR"/>
+            </JarResources>
         </ExtensionPackage>
     </ExtensionPackages>
+    <Resources>
+        <Resource aspect.isCreatable="false" aspect.isEditableExtensionObject="false" className="com.thingworx.casestudy.JavaMail4TWX" description="" name="JavaMail4TWX"/>
+    </Resources>
 </Entities>
